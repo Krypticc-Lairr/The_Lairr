@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Portfolio Home</title>
+  
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Spectral', serif;
+      background-color: #1e1e1e;
+      color: #646464;
+    }
+
+    .top-header {
+      background-color: #000;
+      color: #646464;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .bottom-header {
+      background: #87a5ff;
+      color: #000;  
+      display: flex;
+      align-items: center;  
+      justify-content: center;
+      padding: 2px 10px;     
+      height: auto;
+      min-height: 0px;
+      line-height: 1;
+    }
+
+    main {
+      padding: 2rem;
+      min-height: 70vh;
+    }
+
+    footer {
+      background-color: #000;
+      color: #646464;
+      text-align: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;  
+      bottom: 0;
+      width: 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr; /* 1 wide on mobile */
+        gap: 15px;                  /* smaller gap for small screens */
+        padding: 10px;               /* less padding on mobile */
+      }
+    
+      .button-title {
+        font-size: 0.95rem; /* slightly smaller text for mobile */
+      }
+    }
+
+    .button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #1e1e1e;
+      border: 2px solid #87a5ff;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;  
+      color: inherit;          
+    }
+
+    .button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .button img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #000;
+      object-fit: contain;
+    }
+
+    .button-title {
+      padding: 10px;
+      font-weight: bold;
+    }
+    
+  </style>
+  
+</head>
+
+  
+  
+<body>
+  
+<header>
+  
+  <div class="top-header">
+    <h1>Logan Teachout's Portfolio</h1>
+  </div>
+  
+  <div class="bottom-header">
+    <p><strong>Current Project: </strong><i>Anime Highschool Tabletop System</i></p>
+  </div>
+  
+</header>
+
+  <main>
+      <div class="grid">
+
+        <a href="resume.html" class="button">
+          <img src="images/Resume.jpg" alt="Image 1">
+          <div class="button-title">Resume</div>
+        </a>
+        
+        <a href="start.html" class="button">
+          <img src="images/StarterArea.jpg" alt="Image 2">
+          <div class="button-title">D&D Area Generator</div>
+        </a>
+
+        <!--
+        <a href="evo.html" class="button">
+          <img src="images/Evo1.jpg" alt="Image 3">
+          <div class="button-title">Evolving Particle System</div>
+        </a>
+        -->
+
+        <a href="anim.html" class="button">
+          <img src="images/anim.jpg" alt="Image 3">
+          <div class="button-title">3D Animations</div>
+        </a>
+      
+        <a href="pecu.html" class="button">
+          <img src="images/JojoDND.jpg" alt="Image 4">
+          <div class="button-title">"Peculiar Journeys"</div>
+        </a>
+
+        <a href="homb.html" class="button">
+          <img src="images/Homb.jpg" alt="Image 5">
+          <div class="button-title">"D&D Homebrew"</div>
+        </a>
+        
+      </div>
+  </main>
+
+  <footer>
+    <p>
+      <strong>Contact Me:</strong> <br>
+      Email: Logan.Teachout@gmail.com <br>
+      Phone: 910-568-8751
+    </p>
+  </footer>
+</body>
+  
+</html>
