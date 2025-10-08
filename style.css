@@ -123,7 +123,7 @@
     }
 
     .translucent-box {
-      background-color: rgba(0, 0, 0, 0.5); 
+      background-color: rgba(0, 0, 0, 0.75); 
       color: #646464;                        
       padding: 15px;
       border-radius: 10px;
